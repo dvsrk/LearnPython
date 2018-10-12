@@ -17,5 +17,5 @@ def sum2(n):
 value1= sum1(10)
 value2= sum2(10)
 
-print timeit.repeat("for x in range(10): sum1(x)", "from __main__ import sum1", number=10)
-print timeit.repeat("for x in range(10): sum2(x)", "from __main__ import sum2", number=10)
+print timeit.timeit("sum1(100000000)", "from __main__ import sum1", number=1)
+print timeit.timeit("sum2(100000000)", "from __main__ import sum2", number=1)
