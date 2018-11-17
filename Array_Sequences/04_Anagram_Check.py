@@ -13,11 +13,11 @@ class AnagramCheck:
 
     def anagram_method_01(self):
 
-        # check if length of both strings
         s1 = self.apply_conditions(self.s1)
         s2 = self.apply_conditions(self.s2)
 
         #Edge case check
+        #Check length of strings
         if len(s1) != len(s2):
             return False
 
