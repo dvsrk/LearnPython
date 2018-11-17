@@ -33,15 +33,23 @@ class DynamicArray(object):
         self.capacity = new_cap
 
     def make_array(self, new_cap):
-        return (new_cap * ctypes.py_object)()
+        return (new_cap * ctypes.py_object)()           # to make a raw array object using py_object
 
-
+import sys
 arr = DynamicArray()
 arr.append(10)
-print len(arr)
-print arr[0]
-arr.append(20)
-print len(arr)
+a = arr[0]
+b = len(arr)
+c = sys.getsizeof(arr)
+print 'value: {0:2d}, length: {1:3d}, size_in_bytes: {2:3d}'.format(a,b,c)
+
+for k in xrange(1000):
+    arr.append(k)
+a = arr[1]
+b = len(arr)
+c = sys.getsizeof(arr)
+print 'value: {0:2d}, length: {1:3d}, size_in_bytes: {2:3d}'.format(a,b,c)
+
 
 
 #arr.append(2)
