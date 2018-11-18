@@ -12,3 +12,5 @@ Given an array of integers (positive and negative) find the largest continuous s
     Then the result would be the largest negative number.
 
 '''
+
+def LargestContinuos
