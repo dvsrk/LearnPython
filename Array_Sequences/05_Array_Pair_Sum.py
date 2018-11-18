@@ -14,7 +14,7 @@ class ArrayPairSum:
 
     def method(self):
 
-        'Edge case check
+        #Edge case check
         if len(self.arr) < 2:
             return
 
