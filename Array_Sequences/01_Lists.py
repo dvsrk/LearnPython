@@ -1,5 +1,4 @@
 import timeit
-import sys
 
 num = 10000
 
