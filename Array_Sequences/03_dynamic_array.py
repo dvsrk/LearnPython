@@ -1,5 +1,16 @@
+"""
+    Lists vs Arrays
+    1) The main difference between a list and an array is the functions that you can perform to them.
+        For example, you can divide an array by 3, and each number in the array will be divided by 3 and the result will be printed if you request it.
+        If you try to divide a list by 3, Python will tell you that it can't be done, and an error will be thrown.
+    2) It does take an extra step to use arrays because they have to be declared while lists don't because they are part of Python's syntax,
+        so lists are generally used more often between the two, which works fine most of the time.
+
+"""
+
 # below is the dynamic array implementation.
 # it will let the array grow automatically when the new elements are added
+
 
 import ctypes
 
