@@ -1,39 +1,40 @@
 import timeit
+import sys
 
 num = 10000
 
 def method1():
     l = []
-    for n in xrange(num):
+    for n in range(num):
         l = l + [n]
-    print l[0]
+    print(l[0])
 
 def method2():
     l = []
-    for n in xrange(num):
+    for n in range(num):
         l.append(n)
-    print l[0]
+    print(l[0])
 
 def method3():
-    l = [n for n in xrange(num)]
-    print l[0]
+    l = [n for n in range(num)]
+    print(l[0])
 
 def method4():
     l = range(num)
-    print l[0]
+    print(l[0])
 
 def list_operations():
     l = [1, 2, 3, 4, 5]
     m = [99, 100]
 
     l.extend(m) #extends the original list
-    print l
+    print(l)
 
     slice = l[5:7] #slicing the list
-    print slice
+    print(slice)
 
     k = [0]*5 #repetitive values declaration
-    print k
+    print(k)
 
 def dynamic_lists():
     import sys
@@ -42,15 +43,29 @@ def dynamic_lists():
     for i in range(n):
         a = len(data)
         b = sys.getsizeof(data);
-        print 'length:{0:1d}, size in bytes:{1:3d}'.format(a, b)
+        """
+            .format is used to substitute dynamic values to the string, below the value 'a' goes to {0:d} where d is used for type conversion.
+            
+            s – strings
+            d – decimal integers (base-10)
+            f – floating point display
+            c – character
+            b – binary
+            o – octal
+            x – hexadecimal with lowercase letters after 9
+            X – hexadecimal with uppercase letters after 9
+            e – exponent notation
+            print('length:{0:d}, size in bytes:{1:d}'.format(a, b))
+        """
+        print('length:{0:d}, size in bytes:{1:d}'.format(a, b))
         data.append(i)
-    print data
+    print(data)
 
-#method1()
-#method2()
-#method3()
-#method4()
-#list_operations()
+method1()
+method2()
+method3()
+method4()
+list_operations()
 dynamic_lists()
 #print timeit.timeit("method1()", "from __main__ import method1, num", number=5)
 #print timeit.timeit("method2()", "from __main__ import method2, num", number=5)
