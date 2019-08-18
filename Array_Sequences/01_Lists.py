@@ -58,6 +58,7 @@ def dynamic_lists():
         """
         print('length:{0:d}, size in bytes:{1:d}'.format(a, b))
         data.append(i)
+        #print(type(data))
     print(data)
 
 method1()
