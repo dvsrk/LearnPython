@@ -10,6 +10,5 @@
 
     file = open("<file_name>", "r")
 
-
     
 """
