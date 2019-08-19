@@ -70,6 +70,10 @@ sentence = 'Start a sentence and then bring it to an end'
 """
 pattern = re.compile(r'e.d', re.I)
 
-matches = pattern.search(sentence)
+phones = re.compile(r'[0-9][0-9][0-9].')
 
-print(matches)
+matches = phones.finditer(text_to_search)
+
+for match in matches:
+    print(match)
+    
