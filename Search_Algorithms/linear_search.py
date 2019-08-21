@@ -43,6 +43,5 @@ Output :
                 break
         if found == 0:
                 results.insert(j, -1)
-    for j in range(t):
-        print(results[j])
+    print(*results, sep="\n")
                 
