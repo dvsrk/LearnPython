@@ -1,3 +1,4 @@
+
 """
 
 Given a sorted array arr[] of distinct elements which is rotated at some unknown point, the task is to find the maximum element in it.
