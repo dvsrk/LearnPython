@@ -1,3 +1,4 @@
+
 """
 Given a sorted array A of size N and a number X, you need to find the number of occurrences of X in A.
 
