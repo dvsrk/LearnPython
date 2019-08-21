@@ -1,3 +1,4 @@
+
 """
 Given an array of N elements and a integer K. Your task is to return the position of first occurence of K in the given array.
 Note: Position of first element is considered as 1.
